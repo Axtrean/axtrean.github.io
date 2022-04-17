@@ -1,2 +1,2 @@
-# axtrean.github.io
-Sit course
+# Вадим Губаренко
+Site course
