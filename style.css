@@ -1,6 +1,7 @@
-body{
+body {
     font-family: Arial, sans-serif;
 }
+
 nav {
     width: 100%;
     height: 60px;
@@ -10,14 +11,14 @@ nav {
 .logo {
     color: white;
     font-size: 28px;
-    line-height: 60px;
-    margin-left: 388px;
+    line-height: 53px;
+    margin-left: 300px;
     float: left;
 }
 
 .menu {
     float: left;
-    padding-left: 432px;
+    padding-left: 90px;
 }
 
 .menu li {
@@ -25,6 +26,312 @@ nav {
     line-height: 60px;
     color: white;
     margin-right: 40px;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    background: url(../img/guy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
+    height: calc(100% - 60px);
+}
+
+.hi {
+    float: left;
+    margin: 380px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.hi h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hi h4 {
+    margin-top: 40px;
+    font-size: 20px;
+    color: 79818d;
+
+}
+
+.hi input {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    border-radius: 5px;
+    background: none;
+    color: #6d7682;
+    margin: 40px 10px 0px 0px;
+    padding: 0px 16px;
+}
+
+.about_me h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: #384354;
+}
+
+.about_me p {
+    margin: 20px 0px;
+    text-align: center;
+    color: #3f495a;
+}
+.about_me p.line1 {
+    text-align: center;
+}
+
+span.dwl {
+    border: 2px solid #6f707e;
+    border-radius: 5px;
+    color: #6f707e;
+    text-align: center;
+    padding: 4px 5px;
+}
+.skills h2{
+    text-align: center;
+    font-weight: bold;
+    margin: 80px 0px 25px 0px;
+    font-size: 30px;
+    color: #384354;
+}
+.skills p.line1 {
+    text-align: center;
+}
+.skills{
+    background: url(../img/skillsbg.png) no-repeat center;
+    height: 100%;
+}
+.wdes, .ceo, .dev, .sell{
+    float: left;
+    width: 370px;
+    text-align: center;
+    margin-top: 100px
+}
+.sell h4{
+    color: #cf7600;
+    font-weight: bold;
+    margin: 36px 0px 10px 0px
+    
+}
+.ceo h4{
+    color: #cf7600;
+    font-weight: bold;
+    margin: 33px 0px 10px 0px
+}
+.wdes h4{
+    color: #cf7600;
+    font-weight: bold;
+    margin: 43px 0px 10px 0px
+}
+.dev h4{
+    color: #cf7600;
+    font-weight: bold;
+    margin: 40px 0px 10px 0px    
+}
+.wdes p, .ceo p, .dev p, .sell p{
+    margin: 0px 36px;
+    line-height: 17px;
+}
+.skills p{
+    color: #3f495a;
+    margin-bottom:85px;
+}
+.cases h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: #384354;
+}
+.cases p.line1 {
+    text-align: center;
+}
+.cases span{
+    display: block;
+    color: #3f495a;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+.cases img.oc{
+    position: relative;
+    left: 170px
+}
+.clweb{
+    margin: 16px 180px 16px 170px;
+    float: left;
+}
+.clweb h3 {
+    margin: 16px 0px 8px 0px;
+    color: #3f495a;
+    font-weight: bold;
+    font-size: 20px;
+}
+.clweb p{
+    color: #3f495a;
+}
+.cases input{
+    margin: 6px 0px 0px 170px;
+    height: 40px;
+    width: 180px;
+    border: 5px solid #63b5ae;
+background-color: #63b5ae;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.projname {
+    margin: 32px;
+    color: #3f495a;
+}
+.projname h4{
+    font-weight: bold;
+}
+.projname p{
+    line-height: 30px;
+    padding-right: 100px
+}
+.price_calc h2{
+    color: #1c2534;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 150px;
+}
+.st, .des, .adapt{
+    margin: 0px 0px 0px 400px;
+    color: #1c2534;
+}
+.st select, .des select, .adapt select{
+    border: 2px solid #1c2534;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    
+    padding: 10px;
+    font-size: 12px
+}
+.st h3, .des h3, .adapt h3{
+    font-size: 25px;
+    margin:20px 0px 20px 0px
+}
+.price_calc p{
+    color: #1c2534;
+    margin: 0px 0px 10px 400px;
+}
+.stats{
+    background: url(../img/statbg.png) no-repeat center;
+        height: 100%;
+    text-align: center;
+
+}
+.stats p{
+    color: #323e4f;
+}
+.stats h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 230px;
+    margin-bottom: 25px;
+    color: #384354;
+}
+
+.clients p.b,.portf p.b,.hrs p.b,.rewards p.b{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+}
+.clients p.t,.portf p.t,.hrs p.t,.rewards p.t{
+    font-size: 15px;
+    margin: 15px 0px 185px 0px;
+}
+.clients,.portf,.hrs,.rewards{
+    float: left;
+    
+    margin: 150px 125px 0px 125px;
+}
+.reviews p.line1 {
+    text-align: center;
+}
+.reviews h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: #384354;
+}
+.reviews p.gaz{
+    margin-top: 45px;
+    text-align: center;
+}
+.reviews p.block{
+    color: #323e4f;
+    text-align: center;
+    margin: 22px 0px 25px 0px;
+}
+.reviews p.string{
+    
+    margin: 25px 0px 120px 0px;
+    text-align: center;
+    color: #323e4f;
+}
+.contacts h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: white;
+}
+.contacts span.zag{
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+.contacts p{
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+.mail,.phone,.geo{
+    float: left;
+    margin: 0px 193px;
+}
+.contacts h3{
+    margin-top: 130px;
+    margin-bottom: 38px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px
+}
+.field input.msg,.field textarea.msg{
+    margin-left: 450px
+}
+.field input.msg,.field input.tel{
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 43px;
+margin-bottom: 5px
+}
+.field textarea{
+    border: 1px solid #eeeeee;
+}
+.contacts input.send{
+    border: 2px solid white;
+    margin-left: 690px;
+    margin-top: 10px;
+    height: 35px;
+    width: 100px;
+    background: none;
+}
+.contacts{
+    background: url(../img/bgbtm.png) no-repeat center/100% 100%;
+    height: 100%;
 }
