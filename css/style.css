@@ -34,6 +34,7 @@ nav {
     width: 100%;
     background: url(../img/guy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
     height: calc(100% - 60px);
+    
 }
 
 .hi {
@@ -90,6 +91,7 @@ span.dwl {
     color: #6f707e;
     text-align: center;
     padding: 4px 5px;
+    
 }
 .skills h2{
     text-align: center;
@@ -102,7 +104,7 @@ span.dwl {
     text-align: center;
 }
 .skills{
-    background: url(../img/skillsbg.png) no-repeat center;
+    background: url(../img/skillsbg.png) no-repeat top;
     height: 100%;
 }
 .wdes, .ceo, .dev, .sell{
