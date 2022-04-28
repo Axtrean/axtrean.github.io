@@ -77,26 +77,27 @@ nav {
 }
 
 .about_me p {
-    margin: 20px 0px;
+    padding: 20px 0px;
     text-align: center;
     color: #3f495a;
 }
 .about_me p.line1 {
     text-align: center;
 }
-
+.about_me{
+    background: none;
+}
 span.dwl {
     border: 2px solid #6f707e;
     border-radius: 5px;
     color: #6f707e;
     text-align: center;
     padding: 4px 5px;
-    
 }
 .skills h2{
     text-align: center;
     font-weight: bold;
-    margin: 80px 0px 25px 0px;
+    padding: 230px 0px 25px 0px;
     font-size: 30px;
     color: #384354;
 }
@@ -104,14 +105,15 @@ span.dwl {
     text-align: center;
 }
 .skills{
-    background: url(../img/skillsbg.png) no-repeat top;
+    background: url(../img/skillsbg.png) no-repeat center;
     height: 100%;
 }
 .wdes, .ceo, .dev, .sell{
     float: left;
-    width: 370px;
+    width: 350px;
     text-align: center;
-    margin-top: 100px
+    margin-top: 100px;
+    padding-left: 145px
 }
 .sell h4{
     color: #cf7600;
@@ -140,13 +142,14 @@ span.dwl {
 }
 .skills p{
     color: #3f495a;
-    margin-bottom:85px;
+}
+.cases{
+    background: none;
 }
 .cases h2{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin-top: 80px;
     margin-bottom: 25px;
     color: #384354;
 }
@@ -239,7 +242,7 @@ background-color: #63b5ae;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin-top: 230px;
+    padding-top: 230px;
     margin-bottom: 25px;
     color: #384354;
 }
@@ -265,7 +268,7 @@ background-color: #63b5ae;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin-top: 80px;
+    padding-top: 10px;
     margin-bottom: 25px;
     color: #384354;
 }
@@ -280,7 +283,8 @@ background-color: #63b5ae;
 }
 .reviews p.string{
     
-    margin: 25px 0px 120px 0px;
+    margin: 25px 0px 0px 0px;
+    padding-bottom: 140px;
     text-align: center;
     color: #323e4f;
 }
@@ -288,7 +292,7 @@ background-color: #63b5ae;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin-top: 80px;
+    padding-top: 80px;
     margin-bottom: 25px;
     color: white;
 }
@@ -296,21 +300,25 @@ background-color: #63b5ae;
     display: block;
     text-align: center;
     margin: 20px;
+    color: white;
 }
 .contacts p{
     margin: 10px 0px 10px 0px;
     text-align: center;
+    color: white;
 }
 .mail,.phone,.geo{
     float: left;
     margin: 0px 193px;
+    color: white;
 }
 .contacts h3{
     margin-top: 130px;
     margin-bottom: 38px;
     text-align: center;
     font-weight: bold;
-    font-size: 16px
+    font-size: 16px;
+    color: white;
 }
 .field input.msg,.field textarea.msg{
     margin-left: 450px
@@ -332,6 +340,7 @@ margin-bottom: 5px
     height: 35px;
     width: 100px;
     background: none;
+    color: white;
 }
 .contacts{
     background: url(../img/bgbtm.png) no-repeat center/100% 100%;
