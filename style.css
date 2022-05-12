@@ -313,7 +313,7 @@ background-color: #63b5ae;
     border: 5px solid #33CCFF;
 }
 .projname {
-    margin: 32px;
+    margin:32px 0px;
     color: #3f495a;
 }
 .projname h4{
@@ -321,7 +321,7 @@ background-color: #63b5ae;
 }
 .projname p{
     line-height: 30px;
-    padding-right: 100px
+    
 }
 .price_calc{
     background: none;
@@ -336,15 +336,16 @@ background-color: #63b5ae;
     padding-top: 50px;
 }
 .st, .des, .adapt{
-    margin: 0px 0px 0px 5%;
     color: #1c2534;
+    padding-left: 10%;
 }
 .st select, .des select, .adapt select{
     border: 2px solid #1c2534;
     border-radius: 5px;
     background-color: #eeeeee;
     
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 12px
 }
 .st h3, .des h3, .adapt h3{
@@ -353,15 +354,17 @@ background-color: #63b5ae;
 }
 .price_calc p{
     color: #1c2534;
-    margin: 0px 0px 10px 5%;
+    margin-bottom: 10px;
+    padding-left: 10%;
 }
 .price_calc{
-    width: 60%;
+    width: 100%;
     box-shadow: 1px 1px 10px black;
-    margin: 25px 20%;
+    margin: 25px 0px 25px 0px;
 }
 .price_calc input{
-  margin: 6px 0px 25px 40%;
+    margin: 6px 0px 25px 10%;
+    
     height: 40px;
     width: 180px;
     border: 5px solid #63b5ae;
@@ -371,11 +374,6 @@ background-color: #63b5ae;
     font-size: 15px;
     border-radius: 5px;
     transition: all 0.2s ease 0s;
-}
-@media (max-width:576px){
-    .price_calc input{
-        margin: 6px 0px 25px 30%;
-    }
 }
 .price_calc input:hover{
     transform: scale(1.04)
