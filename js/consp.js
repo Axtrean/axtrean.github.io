@@ -367,6 +367,157 @@ for (let massItem of mass){
 mass.forEach(function(item91, index91, array91){
              console.log("item: " + item91 + " index" + index91 + " array")
              });
-alert("Всплывающее сообщение?") // код не продолжит работать, если не нажать "ОК"
+/*alert("Всплывающее сообщение?") // код не продолжит работать, если не нажать "ОК"
 
-let newAge = prompt("Введи возраст");
+let newAge = prompt("Введи возраст");*/
+
+
+
+
+
+
+
+
+
+
+let lec123 = "Лекция по JQUERY, библиотека JavaScript";
+console.log(lec123);
+
+
+
+
+
+let windowWidth = location.href;
+/*
+navigator.userAgent - информация о браузере и ОС пользователя,
+location.href = "https://yandex.ru" - кинет на яндекс при перезагрузке,
+history.back(), istory.forward() - назад/вперед по истории браузера,
+*/
+console.log(windowWidth);
+
+$(document).ready(function(){
+    $('#js+span').css("border", '2px solid red'); // обращение к СОСЕДНИМ элементам, .parent(), .children() - обращение к родительскому/дочернему элементу, .find(#js) - обращение только к этому элементу внутри родительского
+    $(this)
+
+$('.tt').css("border", '2px solid green');
+});
+
+$(document).ready(function(){
+    $('li:eq(0)').css("border", '2px solid black')
+});
+/* :eq(0) - выбор эл-та по цифре,
+:even - четные;
+:has(.col) - выбор элемента отдельно от других;
+:parent - является ли родителем;
+:empty - выделяет, если там пусто;
+('a[href="ссылка"]') - выделит выбранную ссылку;
+('a[href$=".ru"]') - выделит ссылки с этим окончанием;
+('a[href*="ya"]') - выделит с этим сочетанием букв;
+$('.div').click(function(){
+действие
+});
+$('.div').dblclick(function(){
+$(this).toggleClass("div_class") toggleClass - переключение при нажатии
+});
+$('.div').mouseenter/mouseleave(function(){
+$(this).toggleClass("div_class")
+}); - псевдоэлемент :hover
+$(document).ready(function(){
+    
+$('#jav').focus(function(){
+    alert("focus");
+});
+    
+});*/
+
+$(document).ready(function(){
+    
+$('#jav').change(function(){
+    $("#yup").text("Yup, "+ $(this).val())
+});
+    /*
+    keyup - действие выполняется при нажатии на клавишу
+    */
+});
+
+$(document).ready(function(){
+$('p').click(function(){
+    /*$(this).delay('slow').hide('fast').delay(500).show(2000);
+    */
+    $(this).animate({opacity: 0.25},1000)
+    /*
+    slideUp/slideDown(1000) - скрытие
+    */
+});
+});
+
+$(document).ready(function(){
+    
+
+    $('img').click(function(){
+        $(this).fadeOut(500, function(){
+        $(this).attr("src","img/изображение.jpg").fadeIn(500);
+            /*$(this).toggleClass("один_класс заменит_на_другой") / addClass, removeClass*/
+            
+        });
+        /*prepend - тег, добавит текст в конец текста;
+        after - новый элемент рядом
+        wrap("<div class='wrap'></div>")
+        */
+    });
+    
+    
+});
+
+/*$(document).ready(function(){
+    
+    $(window).scroll(() => {
+        let scrollDistance = $(window).srollTop();
+        
+        $(".класс").each((i, el) => {
+            if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+                $("nav a").each((i, el) => {
+                    if($(el).hasClass("active")){
+                        $(el).removeClass("active");
+                    }
+                });
+                $('nav li:eq('+ i +')').find('a').addClass('active');
+            }
+        });
+    });
+    
+
+
+$('a[href^="#"]').click(function(){
+    
+    let valHref = $(this).attr("href");
+    $('html, body').animate({scrollTop: $(valHref).offset().top - 20 + "px"})
+    
+});  
+
+});// - для скролла по странице!!!!!!!
+*/
+
+$(document).ready(function(){
+    
+    let options = {threshold: [0.5]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.el-a');
+    elements.each((i, el) => {
+        observer.observe(el);
+    });
+    
+});
+
+function onEntry (entry){
+    entry.forEach(change => {
+        if (change.isIntersecting){
+            change.target.classList.add('show-ani');
+            // change.target.src = change.target.dataset.src; - для картинки
+        }
+    });
+};
+
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});

@@ -187,31 +187,34 @@
         <div class="box">
             <div class="st">
                 <h3>ТИП САЙТА</h3>
-                <select name="sitetype" id="price" style="width: 90%"><br>
-                    <option value="Интернет-магазин">Интернет-магазин</option>
-                    <option value="Сайт-визитка">Сайт-визитка</option>
-                    <option value="Корпоративный сайт">Корпоративный сайт</option>
+                <select id="hsitetype" onchange="calc()" style="width: 90%"><br>
+                    <option value="0" value1="0">Выбрать</option>
+                    <option value="22000" value1="60">Интернет-магазин</option>
+                    <option value="8000" value1="5">Сайт-визитка</option>
+                    <option value="15000" value1="23">Корпоративный сайт</option>
                 </select>
             </div><br>
             <div class="des">
                 <h3>ДИЗАЙН</h3>
-                <select name="design" id="price" style="width: 90%"><br>
-                    <option value="1">В минималистичном стиле</option>
-                    <option value="2">Яркий, красочный</option>
-                    <option value="3">По вашей идее</option>
+                <select onchange="calc()" id="hsitedes" style="width: 90%"><br>
+                    <option value="0" value1="0">Выбрать</option>
+                    <option value="3000" value1="1">В минималистичном стиле</option>
+                    <option value="2000" value1="1">Яркий, красочный</option>
+                    <option value="4000" value1="3">По вашей идее</option>
                 </select>
             </div><br>
             <div class="adapt">
                 <h3>АДАПТИВНОСТЬ</h3>
-                <select name="adaptive" id="price" style="width: 90%"><br>
-                    <option value="4">Под мобильные телефоны и планшеты</option>
-                    <option value="5">Под компьютеры</option>
-                    <option value="6">Под всё</option>
+                <select id="hadapt" onchange="calc()" style="width: 90%"><br>
+                    <option value="0" value1="0">Выбрать</option>
+                    <option value="1000" value1="1">Под мобильные телефоны и планшеты</option>
+                    <option value="1500" value1="1">Под компьютеры</option>
+                    <option value="2000" value1="2">Под всё</option>
                 </select>
             </div>
         </div><br>
-        <p>Сроки</p>
-        <p class="pb">Стоимость</p>
+        <div class="timesite"><span>Сроки: <span id="timeresult">0 дней</span> </span></div>
+        <div class="pricesite"><span>Стоимость:</span> <span id="result">0</span> рублей</div>
         <input type="button" value="ОСТАВИТЬ ЗАЯВКУ">
     
     </div>
