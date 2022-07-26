@@ -404,7 +404,13 @@ background-color: #63b5ae;
     margin-bottom: 25px;
     color: #384354;
 }
-
+.stat-ani{
+    opacity: 0;
+}
+.stat-ani.stat-ani-show{
+    opacity: 1;
+    transition: opacity 1s;
+}
 .clients p.b,.portf p.b,.hrs p.b,.rewards p.b{
     font-size: 28px;
     font-weight: bold;
