@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 </head>
 
 <body>
@@ -114,25 +114,25 @@
             <div class="content pt-4">
                 <div class="row pt-5">
                     <div class="col d-flex justify-content-evenly">
-                        <div class="wdes"><img src="img/laptop.png" alt="#">
+                        <div class="wdes stat-ani"><img src="img/laptop.png" alt="#">
                             <h4>Веб-дизайн</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quo.</p>
                         </div>
                     </div>
                     <div class="col d-flex justify-content-evenly">
-                        <div class="dev"><img src="img/slash.png" alt="#">
+                        <div class="dev stat-ani"><img src="img/slash.png" alt="#">
                             <h4>Разработка</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, magni, veritatis!</p>
                         </div>
                     </div>
                     <div class="col d-flex justify-content-evenly">
-                        <div class="ceo"><img src="img/rocket.png" alt="#">
+                        <div class="ceo stat-ani"><img src="img/rocket.png" alt="#">
                             <h4>CEO-Оптимизация</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sunt perferendis qui.</p>
                         </div>
                     </div>
                     <div class="col d-flex justify-content-evenly">
-                        <div class="sell"><img src="img/grammo.png" alt="#">
+                        <div class="sell stat-ani"><img src="img/grammo.png" alt="#">
                             <h4>Маркетинг</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at, nihil alias iusto hic.</p>
                         </div>
@@ -157,8 +157,8 @@
                         <p>GitHub</p>
                         <h3>WEBSITE</h3>
                         <p>www.github.com</p><br>
-                    
-                    <input type="button" value="VISIT LIVE SITE">
+
+                        <input type="button" value="VISIT LIVE SITE">
                     </div>
                 </div>
 
@@ -170,55 +170,58 @@
                 </div>
             </div>
         </div>
-        
+
 
 
 
     </div>
 
-<div class="content"><div class="row">
-   <div class="col-8 mx-auto">
-    <div class="price_calc">
+    <div class="content">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <div class="price_calc">
 
-    
 
-        <h2>Расчет стоимости</h2>
 
-        <div class="box">
-            <div class="st">
-                <h3>ТИП САЙТА</h3>
-                <select id="hsitetype" onchange="calc()" style="width: 90%"><br>
-                    <option value="0" value1="0">Выбрать</option>
-                    <option value="22000" value1="60">Интернет-магазин</option>
-                    <option value="8000" value1="5">Сайт-визитка</option>
-                    <option value="15000" value1="23">Корпоративный сайт</option>
-                </select>
-            </div><br>
-            <div class="des">
-                <h3>ДИЗАЙН</h3>
-                <select onchange="calc()" id="hsitedes" style="width: 90%"><br>
-                    <option value="0" value1="0">Выбрать</option>
-                    <option value="3000" value1="1">В минималистичном стиле</option>
-                    <option value="2000" value1="1">Яркий, красочный</option>
-                    <option value="4000" value1="3">По вашей идее</option>
-                </select>
-            </div><br>
-            <div class="adapt">
-                <h3>АДАПТИВНОСТЬ</h3>
-                <select id="hadapt" onchange="calc()" style="width: 90%"><br>
-                    <option value="0" value1="0">Выбрать</option>
-                    <option value="1000" value1="1">Под мобильные телефоны и планшеты</option>
-                    <option value="1500" value1="1">Под компьютеры</option>
-                    <option value="2000" value1="2">Под всё</option>
-                </select>
+                    <h2>Расчет стоимости</h2>
+
+                    <div class="box">
+                        <div class="st">
+                            <h3>ТИП САЙТА</h3>
+                            <select id="hsitetype" onchange="calc()" style="width: 90%"><br>
+                                <option value="0" value1="0">Выбрать</option>
+                                <option value="22000" value1="60">Интернет-магазин</option>
+                                <option value="8000" value1="5">Сайт-визитка</option>
+                                <option value="15000" value1="23">Корпоративный сайт</option>
+                            </select>
+                        </div><br>
+                        <div class="des">
+                            <h3>ДИЗАЙН</h3>
+                            <select onchange="calc()" id="hsitedes" style="width: 90%"><br>
+                                <option value="0" value1="0">Выбрать</option>
+                                <option value="3000" value1="1">В минималистичном стиле</option>
+                                <option value="2000" value1="1">Яркий, красочный</option>
+                                <option value="4000" value1="3">По вашей идее</option>
+                            </select>
+                        </div><br>
+                        <div class="adapt">
+                            <h3>АДАПТИВНОСТЬ</h3>
+                            <select id="hadapt" onchange="calc()" style="width: 90%"><br>
+                                <option value="0" value1="0">Выбрать</option>
+                                <option value="1000" value1="1">Под мобильные телефоны и планшеты</option>
+                                <option value="1500" value1="1">Под компьютеры</option>
+                                <option value="2000" value1="2">Под всё</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="timesite"><span>Сроки: <span id="timeresult">0 дней</span> </span></div>
+                    <div class="pricesite"><span>Стоимость:</span> <span id="result">0</span> рублей</div>
+                    <input type="button" value="ОСТАВИТЬ ЗАЯВКУ">
+
+                </div>
             </div>
-        </div><br>
-        <div class="timesite"><span>Сроки: <span id="timeresult">0 дней</span> </span></div>
-        <div class="pricesite"><span>Стоимость:</span> <span id="result">0</span> рублей</div>
-        <input type="button" value="ОСТАВИТЬ ЗАЯВКУ">
-    
+        </div>
     </div>
-    </div></div></div>
     <div class="stats">
 
         <div class="col">
@@ -228,26 +231,26 @@
         <div class="content">
             <div class="row">
                 <div class="col d-flex justify-content-evenly">
-                    <div class="clients">
+                    <div class="clients stat-ani">
                         <img src="img/smile.png" alt="Smile">
-                        <p class="b">120</p>
+                        <div id="statnumbcl" class="statnumber"><p class="b">120</p></div>
                         <p class="t">счастливых клиентов</p>
                     </div>
 
-                    <div class="hrs"><img src="img/orslash.png" alt="Dev">
-                        <p class="b">4,600</p>
+                    <div class="hrs stat-ani"><img src="img/orslash.png" alt="Dev">
+                        <div id="statnumbhrs" class="statnumber"><p class="b">4600</p></div>
                         <p class="t">часов работы</p>
                     </div>
 
 
-                    <div class="portf"><img src="img/portfolio.png" alt="Done">
-                        <p class="b">340</p>
+                    <div class="portf stat-ani"><img src="img/portfolio.png" alt="Done">
+                        <div id="statnumbproj" class="statnumber"><p class="b">340</p></div>
                         <p class="t">проектов завершено</p>
                     </div>
 
 
-                    <div class="rewards"><img src="img/rewards.png" alt="Rew">
-                        <p class="b">23</p>
+                    <div class="rewards stat-ani"><img src="img/rewards.png" alt="Rew">
+                        <div id="statnumbrew" class="statnumber"><p class="b">20</p></div>
                         <p class="t">наград получено</p>
                     </div>
 
@@ -292,24 +295,27 @@
                 </div>
                 <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
                 <div class="content">
-                    
-                        <div class="field">
-                           <div class="row"><div class="col d-flex justify-content-center"><input type="text" name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyermail"  style="width: 14%; margin-left: 3%" placeholder="E-mail" class="tel">
-                           </div></div>
-                           <div class="row">
+
+                    <div class="field">
+                        <div class="row">
+                            <div class="col d-flex justify-content-center"><input type="text" name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyermail" style="width: 14%; margin-left: 3%" placeholder="E-mail" class="tel">
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col d-flex justify-content-center"><textarea name="buyermessage" id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
                             </div>
-                            </div>
-                            <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" class="send"></div>
-                        
+                        </div>
+                        <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" class="send"></div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/alert.js">
-    </script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/alert.js"></script>
 </body>
 
 </html>
