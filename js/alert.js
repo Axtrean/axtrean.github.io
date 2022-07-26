@@ -26,4 +26,38 @@ function calc(){
     price += parseInt(hsitedes.options[hsitedes.selectedIndex].value);
 
     result.innerHTML = price;
-}
+};
+
+
+$(document).ready(function(){
+    
+    let options = {threshold: [0.5]};
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = $('.stat-ani');
+    elements.each((i, el) => {
+        observer.observe(el);
+    });
+    
+
+});
+function onEntry (statEntry){
+        statEntry.forEach(change => {
+            if (change.isIntersecting){
+        change.target.classList.add('stat-ani-show');
+            }
+        });
+    };
+
+
+
+$('.b').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter:$(this).text()
+    },{
+        duration: 2000,
+        easing: 'swing',
+        step: function(now){
+        $(this).text(Math.ceil(now));
+    }
+    });
+});
