@@ -17,10 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/preloader.css">
 
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
     <header>
         <nav>
             <div class="container">
@@ -31,12 +38,12 @@
                     <div class="col-xxl-6 offset-xxl-4 col-xl-6 offset-xl-3 col-lg-7 offset-lg-2 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="#">Обо мне</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Кейсы</a></li>
-                                <li><a href="#">Прайс</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#about_me">Обо мне</a></li>
+                                <li><a href="#skills">Услуги</a></li>
+                                <li><a href="#cases">Кейсы</a></li>
+                                <li><a href="#price">Прайс</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -61,7 +68,7 @@
     </header>
 
     <main>
-        <section class="main">
+        <section id="main" class="main">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-lg-6 mt-5 pt-5">
@@ -77,241 +84,242 @@
             </div>
 
         </section>
-    </main>
-    <div class="about_me">
-        <div class="content">
-            <div class="row">
-                <div class="col">
-                    <h2>ОБО МНЕ</h2>
+        <section id="about_me" class="about_me section">
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <h2>ОБО МНЕ</h2>
+                    </div>
+                    <p class="line1"><img src="img/line.png" class="rounded mx-auto d-block" alt="------"></p>
+
+
+
+
+
                 </div>
-                <p class="line1"><img src="img/line.png" class="rounded mx-auto d-block" alt="------"></p>
-
-
-
-
-
             </div>
-        </div>
 
-        <div class="col">
-            <p class="aboutme"><img src="img/amguy.png" alt="Photo"></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam animi perferendis,<br> nostrum excepturi itaque sit eum a ratione suscipit sint?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta numquam enim ex<br> accusantium cum, illum architecto alias sit eaque.</p>
-            <a href="#" download="">
-                <center><span class="dwl"><img src="img/dwnld.png" alt=""><input type="submit" value="Скачать резюме"></span></center>
-            </a>
-        </div>
-    </div><br>
+            <div class="col">
+                <p class="aboutme"><img src="img/amguy.png" alt="Photo"></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam animi perferendis,<br> nostrum excepturi itaque sit eum a ratione suscipit sint?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta numquam enim ex<br> accusantium cum, illum architecto alias sit eaque.</p>
+                <a href="#" download="">
+                    <center><span class="dwl"><img src="img/dwnld.png" alt=""><input type="submit" value="Скачать резюме"></span></center>
+                </a>
+            </div>
+        </section><br>
 
 
-    <div class="skills">
-        <div class="col">
-            <h2>ЧТО Я УМЕЮ</h2>
-        </div>
-        <div class="center">
+        <section id="skills" class="skills section">
+            <div class="col">
+                <h2>ЧТО Я УМЕЮ</h2>
+            </div>
+            <div class="center">
+                <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
+
+                <div class="content pt-4">
+                    <div class="row pt-5">
+                        <div class="col d-flex justify-content-evenly">
+                            <div class="wdes stat-ani"><img src="img/laptop.png" alt="#">
+                                <h4>Веб-дизайн</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quo.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-evenly">
+                            <div class="dev stat-ani"><img src="img/slash.png" alt="#">
+                                <h4>Разработка</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, magni, veritatis!</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-evenly">
+                            <div class="ceo stat-ani"><img src="img/rocket.png" alt="#">
+                                <h4>CEO-Оптимизация</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sunt perferendis qui.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-evenly">
+                            <div class="sell stat-ani"><img src="img/grammo.png" alt="#">
+                                <h4>Маркетинг</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at, nihil alias iusto hic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cases" class="cases section">
+
+            <div class="col">
+                <h2>КЕЙСЫ</h2>
+            </div>
+            <p class="line1"><img src="img/line.png" alt="-----" class=line></p><br>
+            <div class="col"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus excepturi modi enim iste natus architecto, dolores officia libero. Quos!</span></div>
+            <img class="rounded mx-auto d-block col-8" style="max-width: 100%" src="img/opencloud.jpg" alt="OpenCloud" class="oc">
+            <div class="content">
+                <div class="row">
+                    <div class="col-2 offset-2">
+                        <div class="clweb">
+                            <h3>CLIENT:</h3>
+                            <p>GitHub</p>
+                            <h3>WEBSITE</h3>
+                            <p>www.github.com</p><br>
+
+                            <input type="button" value="VISIT LIVE SITE">
+                        </div>
+                    </div>
+
+                    <div class="col-4 offset-xxl-0 offset-xl-0 offset-lg-0 offset-md-1 offset-sm-2 offset-3">
+                        <div class="projname">
+                            <h4>Название проекта</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam voluptatibus perferendis nihil eligendi, ratione mollitia laudantium nobis quis totam, nemo ullam sint ipsum. Nihil dicta ab veniam blanditiis labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quam delectus, quia molestias excepturi neque!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="price" class="price section">
+            <div class="content">
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <div class="price_calc">
+
+
+
+                            <h2>Расчет стоимости</h2>
+
+                            <div class="box">
+                                <div class="st">
+                                    <h3>ТИП САЙТА</h3>
+                                    <select id="hsitetype" onchange="calc()" style="width: 90%"><br>
+                                        <option value="0" value1="0">Выбрать</option>
+                                        <option value="22000" value1="60">Интернет-магазин</option>
+                                        <option value="8000" value1="5">Сайт-визитка</option>
+                                        <option value="15000" value1="23">Корпоративный сайт</option>
+                                    </select>
+                                </div><br>
+                                <div class="des">
+                                    <h3>ДИЗАЙН</h3>
+                                    <select onchange="calc()" id="hsitedes" style="width: 90%"><br>
+                                        <option value="0" value1="0">Выбрать</option>
+                                        <option value="3000" value1="1">В минималистичном стиле</option>
+                                        <option value="2000" value1="1">Яркий, красочный</option>
+                                        <option value="4000" value1="3">По вашей идее</option>
+                                    </select>
+                                </div><br>
+                                <div class="adapt">
+                                    <h3>АДАПТИВНОСТЬ</h3>
+                                    <select id="hadapt" onchange="calc()" style="width: 90%"><br>
+                                        <option value="0" value1="0">Выбрать</option>
+                                        <option value="1000" value1="1">Под мобильные телефоны и планшеты</option>
+                                        <option value="1500" value1="1">Под компьютеры</option>
+                                        <option value="2000" value1="2">Под всё</option>
+                                    </select>
+                                </div>
+                            </div><br>
+                            <div class="timesite"><span>Сроки: <span id="timeresult">0 дней</span> </span></div>
+                            <div class="pricesite"><span>Стоимость:</span> <span id="result">0</span> рублей</div>
+                            <input type="button" value="ОСТАВИТЬ ЗАЯВКУ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stats" class="stats">
+
+            <div class="col">
+                <h2>НЕМНОГО СТАТИСТИКИ</h2>
+            </div>
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
-
-            <div class="content pt-4">
-                <div class="row pt-5">
+            <div class="content">
+                <div class="row">
                     <div class="col d-flex justify-content-evenly">
-                        <div class="wdes stat-ani"><img src="img/laptop.png" alt="#">
-                            <h4>Веб-дизайн</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quo.</p>
+                        <div class="clients stat-ani">
+                            <img src="img/smile.png" alt="Smile">
+                            <p class="b">120</p>
+                            <p class="t">счастливых клиентов</p>
                         </div>
-                    </div>
-                    <div class="col d-flex justify-content-evenly">
-                        <div class="dev stat-ani"><img src="img/slash.png" alt="#">
-                            <h4>Разработка</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, magni, veritatis!</p>
+
+                        <div class="hrs stat-ani"><img src="img/orslash.png" alt="Dev">
+                            <p class="b">4600</p>
+                            <p class="t">часов работы</p>
                         </div>
-                    </div>
-                    <div class="col d-flex justify-content-evenly">
-                        <div class="ceo stat-ani"><img src="img/rocket.png" alt="#">
-                            <h4>CEO-Оптимизация</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sunt perferendis qui.</p>
+
+
+                        <div class="portf stat-ani"><img src="img/portfolio.png" alt="Done">
+                            <p class="b">340</p>
+                            <p class="t">проектов завершено</p>
                         </div>
-                    </div>
-                    <div class="col d-flex justify-content-evenly">
-                        <div class="sell stat-ani"><img src="img/grammo.png" alt="#">
-                            <h4>Маркетинг</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at, nihil alias iusto hic.</p>
+
+
+                        <div class="rewards stat-ani"><img src="img/rewards.png" alt="Rew">
+                            <p class="b">20</p>
+                            <p class="t">наград получено</p>
                         </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="cases">
+        </section>
+        <section id="reviews" class="reviews section">
 
-        <div class="col">
-            <h2>КЕЙСЫ</h2>
-        </div>
-        <p class="line1"><img src="img/line.png" alt="-----" class=line></p><br>
-        <div class="col"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus excepturi modi enim iste natus architecto, dolores officia libero. Quos!</span></div>
-        <img class="rounded mx-auto d-block col-8" style="max-width: 100%" src="img/opencloud.jpg" alt="OpenCloud" class="oc">
-        <div class="content">
-            <div class="row">
-                <div class="col-2 offset-2">
-                    <div class="clweb">
-                        <h3>CLIENT:</h3>
-                        <p>GitHub</p>
-                        <h3>WEBSITE</h3>
-                        <p>www.github.com</p><br>
-
-                        <input type="button" value="VISIT LIVE SITE">
-                    </div>
-                </div>
-
-                <div class="col-4 offset-xxl-0 offset-xl-0 offset-lg-0 offset-md-1 offset-sm-2 offset-3">
-                    <div class="projname">
-                        <h4>Название проекта</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam voluptatibus perferendis nihil eligendi, ratione mollitia laudantium nobis quis totam, nemo ullam sint ipsum. Nihil dicta ab veniam blanditiis labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quam delectus, quia molestias excepturi neque!</p>
+            <h2>ОТЗЫВЫ</h2>
+            <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
+            <div class="content">
+                <div class="row">
+                    <div class="col">
+                        <p class="gaz"><img src="img/gaz.png" alt="#"></p>
+                        <p class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia magni cumque molestias a laboriosam<br> aliquid accusantium, expedita aspernatur maxime rerum eveniet aut odio. Consectetur, illum officia!</p>
+                        <p class="string"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="contacts" class="contacts section">
 
-
-
-
-    </div>
-
-    <div class="content">
-        <div class="row">
-            <div class="col-8 mx-auto">
-                <div class="price_calc">
-
-
-
-                    <h2>Расчет стоимости</h2>
-
-                    <div class="box">
-                        <div class="st">
-                            <h3>ТИП САЙТА</h3>
-                            <select id="hsitetype" onchange="calc()" style="width: 90%"><br>
-                                <option value="0" value1="0">Выбрать</option>
-                                <option value="22000" value1="60">Интернет-магазин</option>
-                                <option value="8000" value1="5">Сайт-визитка</option>
-                                <option value="15000" value1="23">Корпоративный сайт</option>
-                            </select>
-                        </div><br>
-                        <div class="des">
-                            <h3>ДИЗАЙН</h3>
-                            <select onchange="calc()" id="hsitedes" style="width: 90%"><br>
-                                <option value="0" value1="0">Выбрать</option>
-                                <option value="3000" value1="1">В минималистичном стиле</option>
-                                <option value="2000" value1="1">Яркий, красочный</option>
-                                <option value="4000" value1="3">По вашей идее</option>
-                            </select>
-                        </div><br>
-                        <div class="adapt">
-                            <h3>АДАПТИВНОСТЬ</h3>
-                            <select id="hadapt" onchange="calc()" style="width: 90%"><br>
-                                <option value="0" value1="0">Выбрать</option>
-                                <option value="1000" value1="1">Под мобильные телефоны и планшеты</option>
-                                <option value="1500" value1="1">Под компьютеры</option>
-                                <option value="2000" value1="2">Под всё</option>
-                            </select>
+            <h2>МОИ КОНТАКТЫ</h2>
+            <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
+            <span class="zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium rem quisquam.</span>
+            <div class="content">
+                <div class="row">
+                    <div class="col d-flex justify-content-around">
+                        <div class="geo">
+                            <p><img src="img/geo.png" alt="#"></p>
+                            <p>Санкт-Петербург,<br> Березовая 25</p>
                         </div>
-                    </div><br>
-                    <div class="timesite"><span>Сроки: <span id="timeresult">0 дней</span> </span></div>
-                    <div class="pricesite"><span>Стоимость:</span> <span id="result">0</span> рублей</div>
-                    <input type="button" value="ОСТАВИТЬ ЗАЯВКУ">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="stats">
-
-        <div class="col">
-            <h2>НЕМНОГО СТАТИСТИКИ</h2>
-        </div>
-        <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
-        <div class="content">
-            <div class="row">
-                <div class="col d-flex justify-content-evenly">
-                    <div class="clients stat-ani">
-                        <img src="img/smile.png" alt="Smile">
-                        <div id="statnumbcl" class="statnumber"><p class="b">120</p></div>
-                        <p class="t">счастливых клиентов</p>
+                        <div class="mail">
+                            <p><img src="img/mail.png" alt="#"></p>
+                            <p>axtrean@gmail.com</p>
+                        </div>
+                        <div class="phone">
+                            <p><img src="img/phone.png" alt="#"></p>
+                            <p>+7 (911) 148-96-75</p>
+                        </div>
                     </div>
+                    <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+                    <div class="content">
 
-                    <div class="hrs stat-ani"><img src="img/orslash.png" alt="Dev">
-                        <div id="statnumbhrs" class="statnumber"><p class="b">4600</p></div>
-                        <p class="t">часов работы</p>
-                    </div>
-
-
-                    <div class="portf stat-ani"><img src="img/portfolio.png" alt="Done">
-                        <div id="statnumbproj" class="statnumber"><p class="b">340</p></div>
-                        <p class="t">проектов завершено</p>
-                    </div>
-
-
-                    <div class="rewards stat-ani"><img src="img/rewards.png" alt="Rew">
-                        <div id="statnumbrew" class="statnumber"><p class="b">20</p></div>
-                        <p class="t">наград получено</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="reviews">
-
-        <h2>ОТЗЫВЫ</h2>
-        <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
-        <div class="content">
-            <div class="row">
-                <div class="col">
-                    <p class="gaz"><img src="img/gaz.png" alt="#"></p>
-                    <p class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia magni cumque molestias a laboriosam<br> aliquid accusantium, expedita aspernatur maxime rerum eveniet aut odio. Consectetur, illum officia!</p>
-                    <p class="string"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contacts">
-
-        <h2>МОИ КОНТАКТЫ</h2>
-        <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
-        <span class="zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium rem quisquam.</span>
-        <div class="content">
-            <div class="row">
-                <div class="col d-flex justify-content-around">
-                    <div class="geo">
-                        <p><img src="img/geo.png" alt="#"></p>
-                        <p>Санкт-Петербург,<br> Березовая 25</p>
-                    </div>
-                    <div class="mail">
-                        <p><img src="img/mail.png" alt="#"></p>
-                        <p>axtrean@gmail.com</p>
-                    </div>
-                    <div class="phone">
-                        <p><img src="img/phone.png" alt="#"></p>
-                        <p>+7 (911) 148-96-75</p>
-                    </div>
-                </div>
-                <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-                <div class="content">
-
-                    <div class="field">
-                        <div class="row">
-                            <div class="col d-flex justify-content-center"><input type="text" name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyermail" style="width: 14%; margin-left: 3%" placeholder="E-mail" class="tel">
+                        <div class="field">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center"><input type="text" name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyermail" style="width: 14%; margin-left: 3%" placeholder="E-mail" class="tel">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-center"><textarea name="buyermessage" id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center"><textarea name="buyermessage" id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" class="send"></div>
+                            <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" class="send"></div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
