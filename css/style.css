@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body {
     font-family: 'Oswald', sans-serif;
 }
@@ -24,20 +25,25 @@ nav {
 .menu {
     float: left;
 }
-@keyframes coming{
-    0%{
+
+@keyframes coming {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.white-btn:visited{
+
+.white-btn:visited {
     color: white;
 }
-.white-btn{
+
+.white-btn {
     color: white;
 }
+
 .menu li {
     float: left;
     line-height: 60px;
@@ -49,88 +55,113 @@ nav {
     -o-animation: menu 0.4s backwards;
     animation: menu 0.4s backwards;
 }
-@keyframes menu{
-    0%{
+
+@keyframes menu {
+    0% {
         opacity: 0;
         margin-top: -80px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         margin-top: 0px;
     }
 }
-.menu li:nth-child(2){
+
+.menu li:nth-child(2) {
     animation-delay: 0.2s;
 }
-.menu li:nth-child(3){
+
+.menu li:nth-child(3) {
     animation-delay: 0.4s;
 }
-.menu li:nth-child(4){
+
+.menu li:nth-child(4) {
     animation-delay: 0.6s;
 }
-.menu li:nth-child(5){
+
+.menu li:nth-child(5) {
     animation-delay: 0.8s;
 }
-.menu li:nth-child(6){
+
+.menu li:nth-child(6) {
     animation-delay: 1s;
 }
-.menu li a{
+
+.menu li a {
     color: white;
     transition: all 0.1s;
     transform: scale(1);
     display: block;
     text-decoration: none;
 }
-.menu li a:visited{
+
+.menu li a:visited {
     color: white;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     text-decoration: underline;
     color: orange;
 }
-.menu li a:active{
+
+.menu li a:active {
     transform: scale(1.1);
 }
-main{
-    height: 100%;
-    width: 100%;    
+
+.menu li a.active {
+    color: orange;
 }
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
 .main {
     width: 100%;
     background: url(../img/guy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
-    height: 100%; 
+    height: 100%;
 }
-.hi{
+
+.hi {
     animation: priv 0.6s linear 1s backwards;
     float: left;
     width: 100%;
     color: #2c384a;
     text-align: center;
 }
-@keyframes priv{
-    0%{
+
+@keyframes priv {
+    0% {
         margin-left: -100px;
         opacity: 0;
     }
-    95%{
+
+    95% {
         transform: skewX(-6deg)
     }
-    100%{
+
+    100% {
         margin-left: 0;
         opacity: 1;
     }
 }
-.hi input{
+
+.hi input {
     transition: all 0.2s;
     transform: scale(1)
 }
-.hi input:hover{
+
+.hi input:hover {
     background: #344051;
-    color:white;
+    color: white;
 }
-.hi input:active{
+
+.hi input:active {
     transform: scale(1.1)
 }
+
 .hi h1 {
     font-family: Arial, sans-serif;
     font-size: 50px;
@@ -143,6 +174,7 @@ main{
     color: #79818d;
 
 }
+
 .hi input {
     height: 40px;
     text-align: center;
@@ -153,28 +185,36 @@ main{
     margin: 40px 10px 0px 0px;
     padding: 0px 16px;
 }
-@media (max-width: 992px){
-    .hi,.hi h4,.hi input{
-      color: white;
+
+@media (max-width: 992px) {
+
+    .hi,
+    .hi h4,
+    .hi input {
+        color: white;
         position: relative;
-      z-index: 3;
+        z-index: 3;
     }
-    .hi input{
+
+    .hi input {
         border: 2px solid white;
     }
-    .main{
+
+    .main {
         position: relative;
     }
-    .main:after{
+
+    .main:after {
         content: "";
         bottom: 0;
         left: 0;
         top: 0;
         right: 0;
         position: absolute;
-        background: rgba(0,0,0,0.4);
+        background: rgba(0, 0, 0, 0.4);
     }
 }
+
 .about_me h2 {
     font-size: 30px;
     font-weight: bold;
@@ -189,12 +229,15 @@ main{
     text-align: center;
     color: #3f495a;
 }
+
 .about_me p.line1 {
     text-align: center;
 }
-.about_me{
+
+.about_me {
     background: none;
 }
+
 span.dwl {
     border: 2px solid #6f707e;
     border-radius: 5px;
@@ -202,130 +245,167 @@ span.dwl {
     text-align: center;
     padding: 4px 5px;
 }
-span.dwl:hover{
+
+span.dwl:hover {
     box-shadow: 1px 1px 10px #6f707e;
 }
-.skills h2{
+
+.skills h2 {
     text-align: center;
     font-weight: bold;
     padding: 180px 0px 25px 0px;
     font-size: 30px;
     color: #384354;
 }
+
 .skills p.line1 {
     text-align: center;
 }
-.skills{
+
+.skills {
     background: url(../img/skillsbg.png) no-repeat center;
     height: 100%;
 }
-.wdes, .ceo, .dev, .sell{
+
+.wdes,
+.ceo,
+.dev,
+.sell {
     float: left;
     width: 170px;
     text-align: center;
-    
+
 }
-.wdes:hover, .ceo:hover, .dev:hover, .sell:hover{
+
+.wdes:hover,
+.ceo:hover,
+.dev:hover,
+.sell:hover {
     transform: scale(1.1)
 }
-.sell h4{
+
+.sell h4 {
     color: #cf7600;
     font-weight: bold;
-    
-    
+
+
 }
-.ceo h4{
+
+.ceo h4 {
     color: #cf7600;
     font-weight: bold;
-    
+
 }
-.wdes h4{
+
+.wdes h4 {
     color: #cf7600;
     font-weight: bold;
-    
+
 }
-.dev h4{
+
+.dev h4 {
     color: #cf7600;
     font-weight: bold;
-       
+
 }
-.wdes p, .ceo p, .dev p, .sell p{
-    
+
+.wdes p,
+.ceo p,
+.dev p,
+.sell p {
+
     line-height: 17px;
 }
-.skills p{
+
+.skills p {
     color: #3f495a;
 }
-.cases{
+
+.cases {
     background: none;
 }
-.cases h2{
+
+.cases h2 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 25px;
     color: #384354;
 }
+
 .cases p.line1 {
     text-align: center;
 }
-.cases span{
+
+.cases span {
     display: block;
     color: #3f495a;
     margin: 30px 0px 0px 0px;
     text-align: center;
 }
-.cases img.oc{
+
+.cases img.oc {
     position: relative;
     left: 170px;
     z-index: 1;
 }
-.clweb{
+
+.clweb {
     margin: 16px 0px 16px 0px;
     float: left;
 }
+
 .clweb h3 {
     margin: 16px 0px 8px 0px;
     color: #3f495a;
     font-weight: bold;
     font-size: 20px;
 }
-.clweb p{
+
+.clweb p {
     color: #3f495a;
 }
-.cases input{
+
+.cases input {
     height: 40px;
     width: 180px;
     border: 5px solid #63b5ae;
-background-color: #63b5ae;
+    background-color: #63b5ae;
     color: white;
     font-weight: bold;
     font-size: 15px;
     border-radius: 5px;
     transition: all 0.2s ease 0s;
 }
-.cases input:hover{
+
+.cases input:hover {
     transform: scale(1.04)
 }
-.cases input:active{
+
+.cases input:active {
     background-color: #33CCFF;
     border: 5px solid #33CCFF;
 }
+
 .projname {
-    margin:32px 0px;
+    margin: 32px 0px;
     color: #3f495a;
 }
-.projname h4{
+
+.projname h4 {
     font-weight: bold;
 }
-.projname p{
+
+.projname p {
     line-height: 30px;
-    
+
 }
-.price_calc{
+
+.price_calc {
     background: none;
 }
-.price_calc h2{
+
+.price_calc h2 {
     color: #1c2534;
     font-weight: bold;
     font-size: 30px;
@@ -334,69 +414,88 @@ background-color: #63b5ae;
     margin-top: 130px;
     padding-top: 50px;
 }
-.st, .des, .adapt{
+
+.st,
+.des,
+.adapt {
     color: #1c2534;
     padding-left: 10%;
 }
-.st select, .des select, .adapt select{
+
+.st select,
+.des select,
+.adapt select {
     border: 2px solid #1c2534;
     border-radius: 5px;
     background-color: #eeeeee;
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 12px
 }
-.st h3, .des h3, .adapt h3{
+
+.st h3,
+.des h3,
+.adapt h3 {
     font-size: 25px;
-    margin:20px 0px 20px 0px
+    margin: 20px 0px 20px 0px
 }
-.price_calc span{
+
+.price_calc span {
     color: #1c2534;
     margin-bottom: 10px;
     padding-left: 10%;
 }
-.price_calc span#result, .price_calc span#timeresult{
+
+.price_calc span#result,
+.price_calc span#timeresult {
     margin-bottom: 10px;
     padding-left: 1%;
     color: #1c2534;
 }
-.price_calc{
+
+.price_calc {
     width: 100%;
     box-shadow: 1px 1px 10px black;
     margin: 25px 0px 25px 0px;
 }
-.price_calc input{
+
+.price_calc input {
     margin: 6px 0px 25px 10%;
-    
+
     height: 40px;
     width: 180px;
     border: 5px solid #63b5ae;
-background-color: #63b5ae;
+    background-color: #63b5ae;
     color: white;
     font-weight: bold;
     font-size: 15px;
     border-radius: 5px;
     transition: all 0.2s ease 0s;
 }
-.price_calc input:hover{
+
+.price_calc input:hover {
     transform: scale(1.04)
 }
-.price_calc input:active{
+
+.price_calc input:active {
     background-color: #33CCFF;
     border: 5px solid #33CCFF;
 }
-.stats{
+
+.stats {
     background: url(../img/statbg.png) no-repeat center fixed;
     width: 100%;
     height: 80%;
     text-align: center;
 
 }
-.stats p{
+
+.stats p {
     color: #323e4f;
 }
-.stats h2{
+
+.stats h2 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -404,35 +503,45 @@ background-color: #63b5ae;
     margin-bottom: 25px;
     color: #384354;
 }
-.stat-ani{
-    opacity: 0;
-}
-.stat-ani.stat-ani-show{
-    opacity: 1;
-    transition: opacity 1s;
-}
-.clients p.b,.portf p.b,.hrs p.b,.rewards p.b{
+
+.clients p.b,
+.portf p.b,
+.hrs p.b,
+.rewards p.b {
     font-size: 28px;
     font-weight: bold;
     margin: 15px 0px 15px 0px;
 }
-.clients p.t,.portf p.t,.hrs p.t,.rewards p.t{
+
+.clients p.t,
+.portf p.t,
+.hrs p.t,
+.rewards p.t {
     font-size: 15px;
     margin: 15px 0px 185px 0px;
 }
-.clients,.portf,.hrs,.rewards{
+
+.clients,
+.portf,
+.hrs,
+.rewards {
     float: left;
     margin: 150px 0px 0px 0px;
     height: 170px;
 }
-.clients:hover,.portf:hover,.hrs:hover,.rewards:hover{
+
+.clients:hover,
+.portf:hover,
+.hrs:hover,
+.rewards:hover {
     transform: scale(1.02)
 }
 
 .reviews p.line1 {
     text-align: center;
 }
-.reviews h2{
+
+.reviews h2 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -440,23 +549,27 @@ background-color: #63b5ae;
     margin-bottom: 25px;
     color: #384354;
 }
-.reviews p.gaz{
+
+.reviews p.gaz {
     margin-top: 45px;
     text-align: center;
 }
-.reviews p.block{
+
+.reviews p.block {
     color: #323e4f;
     text-align: center;
     margin: 22px 0px 25px 0px;
 }
-.reviews p.string{
-    
+
+.reviews p.string {
+
     margin: 25px 0px 0px 0px;
     padding-bottom: 140px;
     text-align: center;
     color: #323e4f;
 }
-.contacts h2{
+
+.contacts h2 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -464,58 +577,70 @@ background-color: #63b5ae;
     margin-bottom: 25px;
     color: white;
 }
-.contacts span.zag{
+
+.contacts span.zag {
     display: block;
     text-align: center;
     margin: 20px;
     color: white;
 }
-.contacts p{
+
+.contacts p {
     margin: 10px 0px 10px 0px;
     text-align: center;
     color: white;
 }
-.mail,.phone,.geo{
+
+.mail,
+.phone,
+.geo {
     float: left;
-    
+
     color: white;
 }
-.contacts h3{
-    
+
+.contacts h3 {
+
     margin-bottom: 38px;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
     color: white;
 }
-.field input.msg,.field textarea.msg{
-    
-}
-.field input.msg,.field input.tel{
+
+.field input.msg,
+.field textarea.msg {}
+
+.field input.msg,
+.field input.tel {
     border: 1px solid #eeeeee;
     border-radius: 5px;
     height: 30px;
-    
+
     margin-bottom: 5px;
 }
-.field textarea{
+
+.field textarea {
     border: 1px solid #eeeeee;
     border-radius: 5px;
     width: 31%;
 }
-@keyframes shadow{
-    0%{
+
+@keyframes shadow {
+    0% {
         box-shadow: none;
         border: 3px solid #66FF33;
     }
-    100%{
+
+    100% {
         border: 3px solid #66FF33;
-    box-shadow: 1px 0px 10px #66FF33;
+        box-shadow: 1px 0px 10px #66FF33;
     }
 }
-.contacts input.send{
+
+.contacts input.send {
     border: 2px solid white;
-    
+
     margin-top: 10px;
     height: 35px;
     width: 100px;
@@ -523,22 +648,40 @@ background-color: #63b5ae;
     color: white;
     box-shadow: none;
 }
-.contacts{
+
+.contacts {
     background: url(../img/bgbtm.png) no-repeat center/100% 100%;
     height: 100%;
 }
-.field input.msg:focus,.field input.tel:focus, .field textarea.msg:focus{
+
+.field input.msg:focus,
+.field input.tel:focus,
+.field textarea.msg:focus {
     animation: shadow .2s forwards;
 }
-.field input.msg:hover,.field input.tel:hover, .field textarea.msg:hover{
+
+.field input.msg:hover,
+.field input.tel:hover,
+.field textarea.msg:hover {
     border: 3px solid #66FF33;
 }
-.field input.send:hover{
+
+.field input.send:hover {
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
     transform: scale(1.03);
 }
-.field input.send:active{
+
+.field input.send:active {
     box-shadow: 1px 0px 7px white;
+}
+
+.element-animation {
+    opacity: 0;
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: opacity 1s;
 }
