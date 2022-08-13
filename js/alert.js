@@ -32,47 +32,54 @@ $(document).ready(function () {
         result.innerHTML = price;
     };
 
-
-
     let options = {
         threshold: [0.5]
     };
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.stat-ani');
+    let elements = $('.element-animation');
+
     elements.each((i, el) => {
         observer.observe(el);
     });
 
 
-
-    function onEntry(statEntry) {
-        statEntry.forEach(change => {
+    function onEntry(entry) {
+        entry.forEach(change => {
             if (change.isIntersecting) {
-                change.target.classList.add('stat-ani-show');
-
+                change.target.classList.add('element-show');
             }
-
         });
+    }
+
+
+
+    //Бегающие цифры статистики
+    let optionsStat = {
+        threshold: [0.5]
     };
+    let observerStat = new IntersectionObserver(onEntryStat, optionsStat);
+    let elementsStat = $('.statAnimation');
 
-    function numAni() {
-        $('.b').each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 2000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
-        });
-
-    };
-
-    $.when(onEntry(statEntry)).done(function () {
-        numAni();
+    elementsStat.each((i, el) => {
+        observerStat.observe(el);
     });
+
+
+    function onEntryStat(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                if (!$('.statAnimation').hasClass("done")) {
+                    $('.statAnimation').addClass("done");
+                    $('.statAnimation').spincrement({
+                        thousandSeparator: "",
+                        duration: 3000
+                    });
+                }
+            }
+        });
+    }
+
+
 
     $(window).scroll(() => {
         let scrollDistance = $(window).scrollTop();
