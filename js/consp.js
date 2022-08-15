@@ -6,10 +6,11 @@ console.log("Привет, мир!");
 // []-литерал;
 const NAME_1 = 100; // нельзя менять значение, как у let
 let name2 = "10"; //объявление переменной
-var name3 ="Текст"; // let с console.log() одновременно
+var name3 = "Текст"; // let с console.log() одновременно
 // const, let, var - перемнные
-/ - * + /// операторы
+/ - * + / // операторы
 let var3 = 10 + 10;
+
 function func_1() {
     let var3 = 10 + 10;
     console.log(10 + 10);
@@ -17,9 +18,11 @@ function func_1() {
 func_1();
 var3 = 10 + 10; // не писать тип переменной, если хочу использовать 1 переменную дважды
 console.log(var3);
-let name = "Vadim", age = 18, work = "Motion";
+let name = "Vadim",
+    age = 18,
+    work = "Motion";
 
-if (true){
+if (true) {
     let name = "Gg";
     console.log(name); // команды внутри фигурных скобок исполняются локально и не действуют извне 
     const file = NAME_1 + 15;
@@ -42,7 +45,8 @@ console.log(typeof book);
 console.log(book);
 
 let magaz = "magaz";
-function first(){
+
+function first() {
     console.log(typeof magaz);
     console.log(magaz);
 }
@@ -52,11 +56,11 @@ let num3 = "100";
 
 
 console.log(typeof num3);
-    console.log(num3);
+console.log(num3);
 num3 = Number(num3); // преобразовать в строку
 num3 = "50" + "10";
 console.log(typeof num3);
-    console.log(num3);
+console.log(num3);
 
 
 
@@ -65,11 +69,11 @@ let num4 = Boolean("0");
 
 
 console.log(typeof num4);
-    console.log(num4);
+console.log(num4);
 num4 = Number(num4); // преобразовать в строку
 num4 = Boolean(0); // 0 - всегда ложь, другие числа - правда
 console.log(typeof num4);
-    console.log(num4);
+console.log(num4);
 
 
 
@@ -82,7 +86,7 @@ num5 = 10 === "10"; // != - не равно
 /* в сравнении срок приоритет идет по 1й букве*/
 /*|| - важно чтобы 1 значение было true, && - важно чтобы были true оба, !false - меняет на true*/
 console.log(typeof num5);
-    console.log(num5);
+console.log(num5);
 
 
 
@@ -91,28 +95,26 @@ console.log(typeof num5);
 
 
 
-var lec1 ="Тема If Else в JavaScript";
+var lec1 = "Тема If Else в JavaScript";
 console.log(lec1);
 
-if (500 < 100){
+if (500 < 100) {
     console.log("true");
-}
-else if (500 < 300){
+} else if (500 < 300) {
     console.log("false")
-}
-else {
+} else {
     console.log("false 2")
 }
 
-(43 < 12) ? console.log("DA") : console.log("NET"); // краткая хапись кода выше
+(43 < 12) ? console.log("DA"): console.log("NET"); // краткая хапись кода выше
 
 
 
-var lec2 ="Тема циклы в JavaScript";
+var lec2 = "Тема циклы в JavaScript";
 console.log(lec2);
 
 let count = 6;
-do{
+do {
     console.log(count);
     count++;
 }
@@ -122,7 +124,7 @@ console.log("finish")
 
 
 
-for(let count2 = 0; count2 < 15; count2++){  //начало, условие, шаг
+for (let count2 = 0; count2 < 15; count2++) { //начало, условие, шаг
     console.log(count2);
     if (count2 == 8) continue;
     count2++;
@@ -130,13 +132,13 @@ for(let count2 = 0; count2 < 15; count2++){  //начало, условие, ш�
 
 console.log("finish2")
 
-forOne: for (let count4 = 0; count4 < 3; count4++){
-    
-        for(let count3 = 0; count3 < 5; count3++){
-            console.log(count3);
-            if (count == 2) break forOne
-        }
-    
+forOne: for (let count4 = 0; count4 < 3; count4++) {
+
+    for (let count3 = 0; count3 < 5; count3++) {
+        console.log(count3);
+        if (count == 2) break forOne
+    }
+
 }
 console.log("finish3");
 
@@ -152,7 +154,7 @@ console.log(lec3);
 
 let name5 = "Vadim";
 
-function getLocation(age, eyes){
+function getLocation(age, eyes) {
     console.log(age);
     console.log(eyes);
     name5 = "Vad"
@@ -162,7 +164,7 @@ console.log(name5);
 
 
 
-function getLocationTwo(n1, n2){
+function getLocationTwo(n1, n2) {
     let temp = n1 ** n2;
     return temp;
 }
@@ -173,33 +175,32 @@ console.log(getLocationTwo(7, 3));
 
 
 
-function getCube(n3, n4){
+function getCube(n3, n4) {
     let result = 1;
-    
-    for (let i = 0; i < n4; i++){
-        result*= n3;
-    
+
+    for (let i = 0; i < n4; i++) {
+        result *= n3;
+
     }
     return result;
 }
 console.log(getCube(2, 5));
 
 
-function getCubeTwo(n5,n6){
-    if (n6 === 1){
+function getCubeTwo(n5, n6) {
+    if (n6 === 1) {
         return n5;
-    }
-    else{
+    } else {
         return n5 * getCubeTwo(n5, n6 - 1)
     }
 }
-console.log(getCubeTwo(4,3))
+console.log(getCubeTwo(4, 3))
 
 /* если n6=1, то берем n5*/
 
 let somefunction;
-if (true){
-    somefunction = function(){
+if (true) {
+    somefunction = function () {
         console.log('somfunction');
         return 21321;
     };
@@ -217,33 +218,32 @@ return numbone * numbtwo;
 
 let count6 = 0;
 
-let time = setTimeout(function(){
+let time = setTimeout(function () {
     console.log("nis");
     count6++;
-    
-}, 2000
-)
 
-let int = setInterval(function(){
+}, 2000)
+
+let int = setInterval(function () {
     clearTimeout(time);
     console.log("nu");
     count6++;
-    if (count6 === 5){
+    if (count6 === 5) {
         clearInterval(int);
     }
 }, 1000);
 
 let name8 = "Vadim"
 
-function createMsg(text, name8){
+function createMsg(text, name8) {
     return name8 + ", " + text + "!";
 }
 
-function showMsg(msg){
+function showMsg(msg) {
     console.log(msg);
 }
 
-function initMsg(text, name8){
+function initMsg(text, name8) {
     showMsg(createMsg(text, name8));
 }
 
@@ -254,8 +254,8 @@ let part = "terra";
 let terra = {
     name0: "Nova",
     age7: 3234361435,
-    [part + " discription"]: "Описание сверхновой" ,
-    showName: function(){
+    [part + " discription"]: "Описание сверхновой",
+    showName: function () {
         console.log(this.name0);
     }
 };
@@ -271,10 +271,10 @@ terra.age0 = 12321;
 terra["orbit"] = true;
 
 terra.author = {
-        name19: "Vadim",
-        surname: "Aaa",
-        age9: "18",
-    };
+    name19: "Vadim",
+    surname: "Aaa",
+    age9: "18",
+};
 
 delete terra.author;
 
@@ -293,27 +293,27 @@ Object.assign(terra);
 
 console.log(terraNew);
 
-if ("name0" in terra){
+if ("name0" in terra) {
     console.log(terra.name0);
 }
 
-for (let key in terra){
+for (let key in terra) {
     console.log(key);
     console.log(terra[key]);
 }
 
-function createTerra(name, age){
-    return{
+function createTerra(name, age) {
+    return {
         name: name,
         age: age,
     }
 };
 
-function Terra (name56, age56){ // с большой буквы!!!
+function Terra(name56, age56) { // с большой буквы!!!
     this.name56 = name56;
     this.age56 = age56;
 };
-console.log(new Terra ("Vadim", 18));
+console.log(new Terra("Vadim", 18));
 
 console.log(createTerra("Max", "22"));
 console.log(createTerra("Alex", "13"));
@@ -327,15 +327,15 @@ let mass = ["Один",
             5,
             true,
             "Fif",
-            function(){
-                console.log("its work");
+            function () {
+        console.log("its work");
             }
            ];
 
 let matrix = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
 ];
 
 mass[0] = "Три";
@@ -344,33 +344,32 @@ mass.push("newEl"); // добавить эл-т в конец
 mass.unshift("anyEl"); // добавить эл-т в начало
 mass.pop(); // удалить последний эл-т
 mass.shift(); // удалить 1й эл-т
-mass.splice(2,3) // удалить по номерам (позиция с которой начинать и сколько эл-тов вытащить)
+mass.splice(2, 3) // удалить по номерам (позиция с которой начинать и сколько эл-тов вытащить)
 
 console.log(mass);
 console.log(matrix[1][1])
 
 
-if (!Array.isArray(mass)){
+if (!Array.isArray(mass)) {
     console.log(mass);
 };
 
-for (let i = 0; i < matrix.length; i++){
-    for (let j = 0; j < matrix[i].length; j++){
+for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
         console.log(matrix[i][j]);
     }
 };
 
-for (let massItem of mass){
+for (let massItem of mass) {
     console.log(massItem);
 }
 
-mass.forEach(function(item91, index91, array91){
-             console.log("item: " + item91 + " index" + index91 + " array")
-             });
+mass.forEach(function (item91, index91, array91) {
+    console.log("item: " + item91 + " index" + index91 + " array")
+});
 /*alert("Всплывающее сообщение?") // код не продолжит работать, если не нажать "ОК"
 
 let newAge = prompt("Введи возраст");*/
-
 
 
 
@@ -395,14 +394,14 @@ history.back(), istory.forward() - назад/вперед по истории �
 */
 console.log(windowWidth);
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('#js+span').css("border", '2px solid red'); // обращение к СОСЕДНИМ элементам, .parent(), .children() - обращение к родительскому/дочернему элементу, .find(#js) - обращение только к этому элементу внутри родительского
     $(this)
 
-$('.tt').css("border", '2px solid green');
+    $('.tt').css("border", '2px solid green');
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('li:eq(0)').css("border", '2px solid black')
 });
 /* :eq(0) - выбор эл-та по цифре,
@@ -430,43 +429,45 @@ $('#jav').focus(function(){
     
 });*/
 
-$(document).ready(function(){
-    
-$('#jav').change(function(){
-    $("#yup").text("Yup, "+ $(this).val())
-});
+$(document).ready(function () {
+
+    $('#jav').change(function () {
+        $("#yup").text("Yup, " + $(this).val())
+    });
     /*
     keyup - действие выполняется при нажатии на клавишу
     */
 });
 
-$(document).ready(function(){
-$('p').click(function(){
-    /*$(this).delay('slow').hide('fast').delay(500).show(2000);
-    */
-    $(this).animate({opacity: 0.25},1000)
-    /*
-    slideUp/slideDown(1000) - скрытие
-    */
-});
+$(document).ready(function () {
+    $('p').click(function () {
+        /*$(this).delay('slow').hide('fast').delay(500).show(2000);
+         */
+        $(this).animate({
+            opacity: 0.25
+        }, 1000)
+        /*
+        slideUp/slideDown(1000) - скрытие
+        */
+    });
 });
 
-$(document).ready(function(){
-    
+$(document).ready(function () {
 
-    $('img').click(function(){
-        $(this).fadeOut(500, function(){
-        $(this).attr("src","img/изображение.jpg").fadeIn(500);
+
+    $('img').click(function () {
+        $(this).fadeOut(500, function () {
+            $(this).attr("src", "img/изображение.jpg").fadeIn(500);
             /*$(this).toggleClass("один_класс заменит_на_другой") / addClass, removeClass*/
-            
+
         });
         /*prepend - тег, добавит текст в конец текста;
         after - новый элемент рядом
         wrap("<div class='wrap'></div>")
         */
     });
-    
-    
+
+
 });
 
 /*$(document).ready(function(){
@@ -498,26 +499,55 @@ $('a[href^="#"]').click(function(){
 });// - для скролла по странице!!!!!!!
 */
 
-$(document).ready(function(){
-    
-    let options = {threshold: [0.5]};
+$(document).ready(function () {
+
+    let options = {
+        threshold: [0.5]
+    };
     let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.el-a');
     elements.each((i, el) => {
         observer.observe(el);
     });
-    
+
 });
 
-function onEntry (entry){
+function onEntry(entry) {
     entry.forEach(change => {
-        if (change.isIntersecting){
+        if (change.isIntersecting) {
             change.target.classList.add('show-ani');
             // change.target.src = change.target.dataset.src; - для картинки
         }
     });
 };
 
-$(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
+$(document).ready(function () {
+    $('.image-link').magnificPopup({
+        type: 'image'
+    });
+});
+
+// документ реди нужен для использования тегов внутри после загрузки скрипта страницы
+
+parseInt(); // для сложения чисел, а не строк
+
+
+$(docmument).ready(function () {
+    const optii = {
+        rootMargin = '0 0 200px 0'
+        или
+        threshold: 0
+    }
+    // заставит изображения загружаться за 200 пикселей, до того, пока пользователь скроллит до него
+
+    const callback = function (entries, observer) {
+        entries.forEach(entr => {
+            console.log(entr)
+        })
+    }
+
+    const observer = IntersectionObserver(callback, optii);
+
+    const target = document.querySelector('#target');
+    observer.observe(target)
 });
