@@ -101,7 +101,7 @@
             </div>
 
             <div class="col">
-                <p class="aboutme"><img src="img/amguy.png" alt="Photo"></p>
+                <p class="aboutme"><img class="lazy-img" src="img/amguy_8bit.jpg" datasrc="img/amguy.png" alt="Photo"></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam animi perferendis,<br> nostrum excepturi itaque sit eum a ratione suscipit sint?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta numquam enim ex<br> accusantium cum, illum architecto alias sit eaque.</p>
                 <a href="#" download="">
@@ -156,7 +156,7 @@
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p><br>
             <div class="col"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus excepturi modi enim iste natus architecto, dolores officia libero. Quos!</span></div>
 
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="rounded mx-auto d-block col-8" style="max-width: 100%" src="img/opencloud.jpg" alt="OpenCloud" class="oc">
@@ -231,17 +231,15 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-
 
 
         </section>
@@ -334,14 +332,56 @@
 
             <h2>ОТЗЫВЫ</h2>
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
-            <div class="content">
-                <div class="row">
-                    <div class="col">
-                        <p class="gaz"><img src="img/gaz.png" alt="#"></p>
-                        <p class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia magni cumque molestias a laboriosam<br> aliquid accusantium, expedita aspernatur maxime rerum eveniet aut odio. Consectetur, illum officia!</p>
-                        <p class="string"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="gaz"><img src="img/gaz.png" alt="#"></p>
+                                    <p class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia magni cumque molestias a laboriosam<br> aliquid accusantium, expedita aspernatur maxime rerum eveniet aut odio. Consectetur, illum officia!</p>
+                                    <p class="string"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="gaz"><img src="img/gaz.png" alt="#"></p>
+                                    <p class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia magni cumque molestias a laboriosam<br> aliquid accusantium, expedita aspernatur maxime rerum eveniet aut odio. Consectetur, illum officia!</p>
+                                    <p class="string"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="gaz"><img src="img/gaz.png" alt="#"></p>
+                                    <p class="block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia magni cumque molestias a laboriosam<br> aliquid accusantium, expedita aspernatur maxime rerum eveniet aut odio. Consectetur, illum officia!</p>
+                                    <p class="string"><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <section id="contacts" class="contacts section">
