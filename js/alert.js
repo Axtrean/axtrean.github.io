@@ -58,7 +58,7 @@ $(document).ready(function () {
     //-----------------------------------------------------------------------------------------------
 
     let optionsImg = {
-        threshold: [0.5]
+        threshold: [1.0]
     };
     let observerImg = new IntersectionObserver(onEntryImg, optionsImg);
     let elementsImg = $('.lazy-img');
@@ -71,7 +71,7 @@ $(document).ready(function () {
     function onEntryImg(entry) {
         entry.forEach(change => {
             if (change.isIntersecting) {
-                change.target.src = change.target.datasrc;
+                change.target.src = change.target.dataset.src;
             }
         });
     }
