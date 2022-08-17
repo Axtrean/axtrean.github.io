@@ -61,7 +61,7 @@ $(document).ready(function () {
         threshold: [0.5]
     };
     let observerImg = new IntersectionObserver(onEntryImg, optionsImg);
-    let elementsImg = $('.lazy_img');
+    let elementsImg = $('.lazy-img');
 
     elementsImg.each((i, el) => {
         observerImg.observe(el);
