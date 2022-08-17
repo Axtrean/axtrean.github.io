@@ -35,6 +35,7 @@ function calc() {
 
 //------------------------------------------------------------------------------------------------------------------
 $(document).ready(function () {
+
     let options = {
         threshold: [0.5]
     };
@@ -53,6 +54,28 @@ $(document).ready(function () {
             }
         });
     }
+
+    //-----------------------------------------------------------------------------------------------
+
+    let optionsImg = {
+        threshold: [0.5]
+    };
+    let observerImg = new IntersectionObserver(onEntryImg, optionsImg);
+    let elementsImg = $('.lazy_img');
+
+    elementsImg.each((i, el) => {
+        observerImg.observe(el);
+    });
+
+
+    function onEntryImg(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                change.target.src = change.target.datasrc;
+            }
+        });
+    }
+    //--------------------------------------------------------------------------------------------------------------
 
     let optionsStat = {
         threshold: [0.5]
