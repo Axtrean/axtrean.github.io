@@ -17,24 +17,13 @@ nav {
     font-size: 28px;
     line-height: 53px;
     float: left;
-    -webkit-animation: coming 2s;
-    -o-animation: coming 2s;
-    animation: coming 2s;
 }
 
 .menu {
     float: left;
 }
 
-@keyframes coming {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
 
 .white-btn:visited {
     color: white;

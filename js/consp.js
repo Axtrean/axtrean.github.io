@@ -551,3 +551,19 @@ $(docmument).ready(function () {
     const target = document.querySelector('#target');
     observer.observe(target)
 });
+
+// Маска для телефонного поля и проверка на наличие текста в нем
+$(document).ready(function () {
+
+    $("#inputTel").mask("+7(999)999-99-99");
+    
+    $('form').submit(function (event) {
+        
+        if ( $("#inputTel").val() == "" || $("#inputEmail").val() == "" ) {
+            event.preventDefault();
+            alert("Введите телефон");
+        }
+        
+    });
+
+});

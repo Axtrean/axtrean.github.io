@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +53,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-7">
-                        <div class="logo">Вадим Губаренко</div>
+                        <div class="logo animate__backInDown">Вадим Губаренко</div>
                     </div>
                     <div class="col-xxl-6 offset-xxl-4 col-xl-6 offset-xl-3 col-lg-7 offset-lg-2 d-none d-lg-block">
                         <div class="menu">
@@ -107,7 +108,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col">
-                        <h2>ОБО МНЕ</h2>
+                        <h2 class="wow animate__heartBeat">ОБО МНЕ</h2>
                     </div>
                     <p class="line1"><img src="img/line.png" class="rounded mx-auto d-block" alt="------"></p>
 
@@ -270,7 +271,9 @@
 
 
 
-                            <h2>Расчет стоимости</h2>
+
+                            <h2 class="animate__shakeY">Расчет стоимости</h2>
+
 
                             <div class="box">
                                 <div class="st">
@@ -428,11 +431,11 @@
 
                         <div class="field">
                             <div class="row">
-                                <div class="col d-flex justify-content-center"><input type="text" name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyermail" style="width: 14%; margin-left: 3%" placeholder="E-mail" class="tel">
+                                <div class="col d-flex justify-content-center"><input type="text" required name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyertel" style="width: 14%; margin-left: 3%" id="inputTel" placeholder="+7 (999) 999-99-99" required class="tel">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col d-flex justify-content-center"><textarea name="buyermessage" id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
+                                <div class="col d-flex justify-content-center"><textarea name="buyermessage" required id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
                                 </div>
                             </div>
                             <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" class="send"></div>
@@ -446,6 +449,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/alert.js"></script>
     <script src="js/jquery.spincrement.js"></script>
 
