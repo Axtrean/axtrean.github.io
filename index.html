@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Описание страницы в поисковике">
-    <meta name="author" content="Имя автора">
-    <meta name="keywords" content="Ключевые слова для поиска в поисковике, уже устарел">
+    <meta name="description" content="Разработчик сайтов к вашим услугам">
+    <meta name="author" content="Вадим">
+    <meta name="keywords" content="сайт, разработать, купить сайт">
     <meta name="robots" content="noindex">
     <meta property="og:title" content="Вадим веб-разработчик">
     <meta property="og:discription" content="Вадим - fullstack разработчик, сделаю вам сайт">
@@ -108,7 +108,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col">
-                        <h2 class="wow animate__heartBeat">ОБО МНЕ</h2>
+                        <h2 class="wow animate__animated animate__bounce">ОБО МНЕ</h2>
                     </div>
                     <p class="line1"><img src="img/line.png" class="rounded mx-auto d-block" alt="------"></p>
 
@@ -132,7 +132,7 @@
 
         <section id="skills" class="skills section">
             <div class="col">
-                <h2 class="wow animate__heartBeat">ЧТО Я УМЕЮ</h2>
+                <h2 class="wow animate__animated animate__bounce">ЧТО Я УМЕЮ</h2>
             </div>
             <div class="center">
                 <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
@@ -170,7 +170,7 @@
         <section id="cases" class="cases section">
 
             <div class="col">
-                <h2 class="wow animate__heartBeat">КЕЙСЫ</h2>
+                <h2 class="wow animate__animated animate__bounce">КЕЙСЫ</h2>
             </div>
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p><br>
             <div class="col"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam necessitatibus excepturi modi enim iste natus architecto, dolores officia libero. Quos!</span></div>
@@ -272,7 +272,7 @@
 
 
 
-                            <h2 class="wow animate__jello">Расчет стоимости</h2>
+                            <h2 class="wow animate__animated animate__bounce">Расчет стоимости</h2>
 
 
                             <div class="box">
@@ -316,7 +316,7 @@
         <section id="stats" class="stats">
 
             <div class="col">
-                <h2 class="wow animate__jello">НЕМНОГО СТАТИСТИКИ</h2>
+                <h2 class="wow animate__animated animate__bounce">НЕМНОГО СТАТИСТИКИ</h2>
             </div>
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
             <div class="content">
@@ -351,7 +351,7 @@
         </section>
         <section id="reviews" class="reviews section">
 
-            <h2 class="wow animate__heartBeat">ОТЗЫВЫ</h2>
+            <h2 class="wow animate__animated animate__bounce">ОТЗЫВЫ</h2>
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -407,7 +407,7 @@
         </section>
         <section id="contacts" class="contacts section">
 
-            <h2 class="wow animate__shakeX">МОИ КОНТАКТЫ</h2>
+            <h2 class="wow animate__animated animate__bounce">МОИ КОНТАКТЫ</h2>
             <p class="line1"><img src="img/line.png" alt="-----" class=line></p>
             <span class="zag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium rem quisquam.</span>
             <div class="content">
@@ -428,19 +428,20 @@
                     </div>
                     <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
                     <div class="content">
-
-                        <div class="field">
-                            <div class="row">
-                                <div class="col d-flex justify-content-center"><input type="text" required name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyertel" style="width: 14%; margin-left: 3%" id="inputTel" placeholder="+7 (999) 999-99-99" required class="tel">
+                        <form action="php/mail.php" method="post">
+                            <div class="field">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center"><input type="text" required name="buyername" style="width: 14%" placeholder="Имя" class="msg"><input type="tel" name="buyertel" style="width: 14%; margin-left: 3%" id="inputTel" placeholder="+7 (999) 999-99-99" required class="tel">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col d-flex justify-content-center"><textarea name="buyermessage" required id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center"><textarea name="buyermessage" required id="buyermsg" cols="81" rows="5" placeholder="Сообщение" class="msg"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" class="send"></div>
+                                <div class="col d-flex justify-content-center"><input type="submit" value="Отправить" name="buyer" class="send"></div>
 
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
