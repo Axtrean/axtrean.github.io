@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+.menu a{
+    float: left;
+    margin-left: 25px;
+    font-size: 18px;
+}
+.logo{
+    float:left;
+    font-size: 30px;
+    margin-top: 5px;
+}
+nav{
+    background-color: lightskyblue;
+    height: 60px;
+}
+section.main{
+    height: 600px;
+    background: url(../img/metallurgical-welder-sparks-welding-mask-gloves.webp) no-repeat center/101%;
+    border: 1px gray solid;
+}
+section.main h1{
+    margin: 200px 100px 0px 100px;
+    color: #fff;
+    text-align: right;
+}
+section.main h4{
+    margin: 0px 100px 0px 100px;
+    color: #fff;
+    text-align: right;
+}
+.history h2,.useful h2,.inventory h3,.technology h3,.types h3,.guide h2,.howto_h2{
+    margin: 50px auto 20px auto;
+    text-align: center;
+}
+img.zagolovok{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.guide-img,.types-img,.technology-img,.inventory-img,.useful-img,.history-img{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.space-industry,.military,.medicine,.microelectronics{
+    text-align: center;
+    width: 150px;
+    float: left;
+    color: orange;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.useful{
+    text-align: center;
+}
+.history{
+    height: 530px;
+}
+.useful{
+    
+    height: 500px;
+}
+
+.inventory{
+    margin-bottom: 420px;
+    height: 300px;
+}
+
+.technology{
+    
+    height: 250px;
+}
+.types{
+    
+    height: 360px;
+}
+.guide{
+    
+    height: 800px;
+    
+}
+p.text{
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+p.line{
+    text-align: center;
+}
