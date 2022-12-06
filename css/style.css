@@ -63,8 +63,9 @@ img.zagolovok{
     height: 530px;
 }
 .useful{
-    
+    background: url(../img/d7yf5k4jPqw.webp) no-repeat center/100%;
     height: 500px;
+    padding-top: 10px;
 }
 
 .inventory{
@@ -73,15 +74,14 @@ img.zagolovok{
 }
 
 .technology{
-    
-    height: 250px;
+    height: 240px;
 }
 .types{
-    
+    padding-top: 10px;
+    background: url(../img/360_F_26286257_2g0jyHu0OhAHriNdNQ6bfnE4KV8bUDUM.webp) center/100%;
     height: 360px;
 }
 .guide{
-    
     height: 800px;
     
 }
