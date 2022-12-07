@@ -70,15 +70,15 @@ img.zagolovok{
 
 .inventory{
     margin-bottom: 420px;
-    height: 300px;
+    height: 400px;
 }
 
 .technology{
-    height: 240px;
+    height: 720px;
 }
 .types{
     padding-top: 10px;
-    background: url(../img/360_F_26286257_2g0jyHu0OhAHriNdNQ6bfnE4KV8bUDUM.webp) center/100%;
+    background: url(../img/d0dea5755f08c9628bae9c9998e3a6e3.webp) center/100%;
     height: 360px;
 }
 .guide{
@@ -92,4 +92,10 @@ p.text{
 }
 p.line{
     text-align: center;
+}
+p.tech_img{
+    text-align: center;
+}
+.inventory span{
+    color: red;
 }
