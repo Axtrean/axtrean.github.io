@@ -7,7 +7,7 @@
     <title>ЭЛС 2151</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,17 +18,23 @@
 </head>
 
 <body>
+   <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
     <nav>
         <div class="content">
             <div class="row">
-                <div class="logo col-1 offset-1">ЭЛС</div>
-                <div class="col-4 offset-5">
+                <div class="logo col-3 offset-1 animate__heartBeat">Электролазерная сварка</div>
+                <div class="col-4 offset-3">
                     <div class="menu">
                         <ul>
-                            <li><a href="#">История</a></li>
-                            <li><a href="#">Актуальность</a></li>
-                            <li><a href="#">Технология</a></li>
-                            <li><a href="#">Инструкция</a></li>
+                            <li><a href="#history">История</a></li>
+                            <li><a href="#useful">Актуальность</a></li>
+                            <li><a href="#tech">Технология</a></li>
+                            <li><a href="#howto">Использование</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,34 +51,74 @@
                 <h1>Электронно-лучевая сварка </h1><br>
                 <h4>История, актуальность, применение, инструкция</h4>
                 <h4>Группа 2151<br>
-                <br>
-                Над проектом работали:<br>
-                Богданов Илья<br>
-                Гонсо Евгений<br>
-                Губаренко Вадим<br>
-                Исаков Артем<br>
-                Клокова Анастасия<br>
-                Махарадзе Давид</h4>
+                    <br>
+                    Над проектом работали:<br>
+                    <br>
+                    <span>Богданов Илья</span><br>
+                    <span>Гонсо Евгений</span><br>
+                    <span>Губаренко Вадим</span><br>
+                    <span>Исаков Артем</span><br>
+                    <span>Клокова Анастасия</span><br>
+                    <span>Махарадзе Давид</span>
+                </h4>
             </div>
 
         </section>
-        <section>
+        <section class="section" id="history">
             <div class="history">
 
                 <h2>История</h2>
                 <p class="line"><img src="img/line.png" alt="#"></p>
-                <p class="history-img"><img src="#" alt="#"></p>
-                <p class="text">Своим появлением лазерный луч обязан фундаментальным достижениям в физике, начало которых было положено в конце XIX века. В течении десятка лет было произведено пять важнейших открытий. Начало положил немецкий физик В. Рентген. Который в 1895 году открыл новую разновидность излучения, за это открытие позднее он получил первую в истории Нобелевскую премию. Француз А. Беккерель открыл радиоактивность в 1896 году, за что также удостоен Нобелевской премии. Свою награду от фонда Нобеля получил и англичанин Дж. Томсон, который не только открыл электрон, но и позднее произвел измерения его заряда.<br>
+
+
+
+                <p class="text col-6">Своим появлением лазерный луч обязан фундаментальным достижениям в физике, начало которых было положено в конце XIX века. В течении десятка лет было произведено пять важнейших открытий. Начало положил немецкий физик В. Рентген. Который в 1895 году открыл новую разновидность излучения, за это открытие позднее он получил первую в истории Нобелевскую премию. Француз А. Беккерель открыл радиоактивность в 1896 году, за что также удостоен Нобелевской премии. Свою награду от фонда Нобеля получил и англичанин Дж. Томсон, который не только открыл электрон, но и позднее произвел измерения его заряда.<br>
                     В 1900 году М. Планк вывел формулу испускательной способности черного тела. В основе его работы лежала новая концепция, которая впоследствии стала фундаментом квантовой теории. Которая в XX веке стала одной из основополагающих теорий в физике. Молодой А. Эйнштейн в 1905 году опубликовал теорию относительности. На мировую научную общественность эти открытия произвели ошеломительное впечатление. Многие исследователи пребывали в замешательстве, потребовалось переосмыслить существовавшие ранее представления. Поскольку новые данные никак не укладывались в рамки классических теорий.
                     <br>
                     В 1964 году советские академики Прохоров Н.Г. и Басов, А.М., а также и американский физик Ч. Таунс стали лауреатами Нобелевской премии, за теоретическое обоснование и создание лазеров. Таким образом человечество получило в свои руки луч лазера.
                     <br>
                     Огромную роль в проектирование передовых технологий сварки, а также ее механизацию, конструирование оборудования для сварки, создание основных и сварочных материалов сыграл Институт электросварки им. Е. О. Патона, Центральный научно - исследовательский институт конструкционных материалов «Прометей», Центральный научно-исследовательский институт технологии судостроения.
                 </p>
+
+
+                <div class="content">
+                    <div class="row mx-5">
+
+                        <div class="tauns col-3">
+                            <img src="img/tauns.webp" height="200" alt="">
+                            <p>Чарльз Таунс</p>
+                        </div>
+
+                        <div class="plunk col-3">
+                            <img src="img/m-plunk.webp" height="200" alt="">
+                            <p>Макс Планк</p>
+                        </div>
+
+                        <div class="prohorov col-3">
+                            <img src="img/n-g-prohorov-a-m-basov.webp" height="200" alt="">
+                            <p>Александр Прохоров и Николай Басов</p>
+                        </div>
+
+                        <div class="einstein col-3">
+                            <img src="img/a-enstein.webp" height="200" alt="">
+                            <p>Альберт Эйнштейн</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
             </div>
         </section>
 
-        <section>
+        <section id="useful" class="section">
             <div class="useful">
                 <h2 style="color: white">Актуальность</h2>
                 <p class="line"><img src="img/line.png" alt="#"></p>
@@ -80,29 +126,29 @@
                     <div class="row">
 
                         <div class="space-industry col-2 offset-1">
-                            <img src="#" alt="#">
-                            <p style="color: white; font-size: 18px">Космическая промышленность</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae doloremque officiis odio voluptates deleniti voluptas facere qui eaque fugit.</p>
+                            <img src="img/space.png" alt="#">
+                            <p style="color: white; font-size: 18px; margin-top: 10px">Космическая промышленность</p>
+                            
                         </div>
 
 
 
                         <div class="medicine col-2 offset-1">
-                            <img src="#" alt="#">
-                            <p style="color: white; font-size: 18px">Медицина</p><br>
-                            <p style="padding-top: 5px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsam libero dolorem similique ratione a quia, unde voluptate ut cumque.</p>
+                            <img src="img/medicine.png" alt="#">
+                            <p style="color: white; font-size: 18px; margin-top: 10px">Медицина</p><br>
+                            
                         </div>
 
                         <div class="microelectronics col-2 offset-1">
-                            <img src="#" alt="#">
-                            <p style="color: white; font-size: 18px">Микроэлектроника</p><br>
-                            <p style="padding-top: 5px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minima modi iste harum saepe iure ipsam distinctio expedita aspernatur quas.</p>
+                            <img src="img/microelectronics.png" alt="#">
+                            <p style="color: white; font-size: 18px; margin-top: 10px">Микроэлектроника</p><br>
+                            
                         </div>
 
                         <div class="military col-2 offset-1">
-                            <img src="#" alt="#">
-                            <p style="color: white; font-size: 18px">Оборонные предприятия</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim obcaecati, dicta. Odio veritatis, reprehenderit, laboriosam repellendus cupiditate quod quo quos?</p>
+                            <img src="img/army.png" alt="#">
+                            <p style="color: white; font-size: 18px; margin-top: 10px">Оборонные предприятия</p>
+                            
                         </div>
 
                     </div>
@@ -113,13 +159,14 @@
 
 
 
-        <section>
+        <section id="tech" class="section">
             <div class="howto">
 
                 <div class="inventory">
 
                     <h3>Оборудование</h3>
                     <p class="line"><img src="img/line.png" alt="#"></p>
+
                     <div class="content">
                         <div class="row">
                             <p class="col-4 mx-5"><span>Высоковольтный кабель</span><br>
@@ -147,7 +194,8 @@
                                 Изделие которое находится в вакуумной камере<br>
 
                                 <span>Вакуумная камера</span><br>
-                                ограниченный объём, в котором создаётся вакуум</p>
+                                ограниченный объём, в котором создаётся вакуум
+                            </p>
                             <p class="inside col-3" style="text-align: center; margin-top: 20px">
                                 <img src="img/mechanics.webp" style="width: 400px; height: 400px" alt="">
                             </p>
@@ -172,7 +220,7 @@
 
                 <div class="technology">
 
-                    <h3>Внутреннее строение</h3>
+                    <h3>Принцип работы</h3>
                     <p class="line"><img src="img/line.png" alt="#"></p>
                     <p class="tech_img"><img src="img/b9cc82de-dfcb-4d70-b1c0-a5580894ddc2.webp" alt="#"></p>
                     <p class="text" style="font-size: 16px">Электронная пушка 8 и изделие 7 находятся внутри вакуумной камеры 9. Для настроечных и сварочных перемещений изделия используют манипулятор 4,привод 12 которые обычно располагаются вне камеры. Для визуального контроля над процессом сварки в камере имеются смотровые окна 5 и оптическая система наблюдения 6. Для создания вакуума внутри камеры служит откачная система 10. Силовой энергией пушку снабжает высоковольтный источник питания 11. Контроль и управление процессом осуществляется с пульта 2 или стойки управления 3. В состав установки может входить видеоконтрольное устройство с выводом изображения на монитор 1</p>
@@ -192,24 +240,33 @@
 
 
 
-        <section>
+        <section id="howto" class="section">
             <div class="guide">
 
-                <h2>Как это использовать</h2>
+                <h2>Эксплуатация РЛС 1000w</h2>
                 <p class="line"><img src="img/line.png" alt="#"></p>
-                <p class="guide-img"><img src="#" alt="#"></p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit a magni cum suscipit autem doloremque nulla nesciunt qui corporis cupiditate rerum ducimus voluptate delectus dolores ut blanditiis ab consequatur illum, perspiciatis excepturi eius sequi! Fuga repudiandae debitis veritatis necessitatibus obcaecati earum autem voluptates cumque fugit blanditiis. Enim placeat animi cupiditate assumenda nam quo, quas voluptas velit reprehenderit, nostrum voluptate voluptates. Autem dolorum accusamus aperiam tempore minima, repellat eligendi obcaecati provident veniam ut magnam. Eaque nisi deleniti eligendi provident nemo perferendis corporis eveniet at ab. Facilis excepturi vero cupiditate explicabo, at.</p>
+                <p class="text">Подключить голубой провод к разъёму. На другом конце этого провода есть крокодил, его нужно подключить к свариваемым деталям, без него сварка не будет работать, ибо это предохранительный механизм.
+                    Подключить трубку подачи газа.
+                    Включить водный автомат и автоматический выключатель станка.
+                    Разблокировать кнопку аварийного выключения.
+                    Включить чиллер.
+                    Надо заправить чиллер водой для этого нужно подключить шланг в чиллер, а другой конец в бутылку с питьёвой водой 18 литров, нажать и удерживать кнопку, пока чиллер заправляет воду,
+                    далее включить кнопку LASER и кнопку SPC.
+                    Подключить провод управления к податчикам проволки.
+                    Заправить проволку в податчик, диаметр проволки от 0.8 до 1.0 мм.
+                    Настроить позиционирование сварочной проволки относительно сопла.
+                    Отрегулировать скорость подачи проволки.</p>
+                    
+                    <img class="g-img" src="img/xrsKz1400o38hlTSdoXGOEjzyMSthnF2EPRLFwes-big.webp" alt="#">
             </div>
         </section>
 
     </main>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/els.js"></script>
-    <script src="js/jquery.spincrement.js"></script>
+    <script src="js/a.js"></script>
+    
+    
+    
 </body>
 
 </html>

@@ -3,6 +3,25 @@
 body {
     font-family: 'Oswald', sans-serif;
 }
+a{
+    text-decoration: none
+}
+nav {
+    width: 100%;
+    height: 60px;
+    
+    position: fixed;
+    z-index: 2;
+}
+li .active{
+    color: #fa8b28 !important;
+}
+.hi span:hover{
+    color: darkorange;
+}
+nav a:hover{
+    color: darkorange;
+}
 .menu a{
     float: left;
     margin-left: 25px;
@@ -41,7 +60,7 @@ img.zagolovok{
     margin-left: auto;
     margin-right: auto;
 }
-.guide-img,.types-img,.technology-img,.inventory-img,.useful-img,.history-img{
+.types-img,.technology-img,.inventory-img,.useful-img,{
     margin: 20px auto;
     text-align: center;
 }
@@ -55,19 +74,15 @@ img.zagolovok{
     margin-bottom: 50px;
     margin-top: 50px;
 }
-
-.useful{
-    text-align: center;
-}
 .history{
-    height: 530px;
+    height: 710px;
 }
 .useful{
     background: url(../img/d7yf5k4jPqw.webp) no-repeat center/100%;
-    height: 500px;
+    height: 450px;
     padding-top: 10px;
+    text-align: center;
 }
-
 .inventory{
     margin-bottom: 420px;
     height: 400px;
@@ -82,7 +97,7 @@ img.zagolovok{
     height: 360px;
 }
 .guide{
-    height: 800px;
+    height: 700px;
     
 }
 p.text{
@@ -98,4 +113,12 @@ p.tech_img{
 }
 .inventory span{
     color: red;
+}
+.tauns,.plunk,.prohorov,.einstein{
+    text-align: center;
+    margin-top: 10px;
+}
+.g-img{
+    position: relative;
+    margin: 20px 130px;
 }
