@@ -16,9 +16,6 @@ nav {
 li .active{
     color: #fa8b28 !important;
 }
-.hi span:hover{
-    color: darkorange;
-}
 nav a:hover{
     color: darkorange;
 }
